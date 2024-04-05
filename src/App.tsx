@@ -25,8 +25,8 @@ import DoughnutChartPlace, { top5Places } from "./DoughnutChartPlace";
 
 function App() {
   // 가져온 데이터 확인
-  console.log("App.tsx_지출 top5 카테고리 : ", top5Categories);
-  console.log("App.tsx_지출 top5 장소 : ", top5Places);
+  //console.log("App.tsx_지출 top5 카테고리 : ", top5Categories);
+  //console.log("App.tsx_지출 top5 장소 : ", top5Places);
 
   return (
     <Box className={box}>
@@ -56,7 +56,7 @@ function App() {
                 <ul className={list}>
                   {top5Categories.map((category, index) => (
                     <li key={index + 1}>
-                      {index + 1}. {category}
+                      {index + 1}. {category[0]}
                     </li>
                   ))}
                 </ul>
@@ -75,7 +75,7 @@ function App() {
                 <ul className={list}>
                   {top5Places.map((place, index) => (
                     <li key={index}>
-                      {index + 1}. {place}
+                      {index + 1}. {place[0]}
                     </li>
                   ))}
                 </ul>
