@@ -61,10 +61,10 @@ const getTotalExpensesPerCategories = (data) => {
 const totalExpensesPerCategoriesResult =
   getTotalExpensesPerCategories(testData);
 
-console.log(
-  "totalExpensesPerCategoriesResult",
-  totalExpensesPerCategoriesResult
-);
+// console.log(
+//   "totalExpensesPerCategoriesResult",
+//   totalExpensesPerCategoriesResult
+// );
 
 const data = {
   labels: dbCategories,

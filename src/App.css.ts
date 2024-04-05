@@ -23,10 +23,13 @@ export const headText = style({
 });
 
 export const explainText = style({
-  fontSize: "12px",
+  fontSize: "0.8rem",
+  fontWeight: "500",
+  display: "flex",
+  flexDirection: "column",
+  flexGrow: 1,
+  marginRight: "24px",
   color: "#8E8E8E",
-  marginTop: "10px",
-  marginBottom: "5px",
 });
 
 export const resultTextBox = style({
@@ -72,8 +75,9 @@ export const largestExpCategoryBox = style({
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-between",
+  gap: "20px",
 
-  padding: "48px 60px",
+  padding: "48px 48px",
 });
 
 export const explainTitle = style({
@@ -82,20 +86,29 @@ export const explainTitle = style({
 });
 export const expExpainText = style({
   fontSize: "1rem",
+  fontWeight: "600",
+  display: "flex",
+  flexDirection: "column",
 });
 export const ranking = style({
   fontSize: "1rem",
+  display: "flex",
 });
 export const list = style({
-  margin: "8px 0",
   listStyleType: "none",
+  margin: "0",
+  padding: "0",
 });
-
+export const li = style({
+  marginTop: "15px",
+});
 export const doughnutChartBox = style({
-  width: "43%",
-  height: "100%",
+  width: "40%",
+  height: "40%",
 
   display: "flex",
+  minWidth: "200px",
+  minHeight: "200px",
 });
 export const doughnutChart = style({
   width: "100%",
@@ -106,7 +119,7 @@ export const doughnutChart = style({
 //#region 바 차트
 export const barChartBox = style({
   backgroundColor: "rgba(255,255,255,0.8)",
-  border: "1px solid rgba(0,0,0,0.1)", //none으로 나중에 바꾸ㄱl
+  border: "none",
   display: "flex",
   width: "100%",
   height: "48vh",

@@ -14,6 +14,7 @@ import {
   headText,
   largestExpCategoryBox,
   largestExpPlaceBox,
+  li,
   list,
   ranking,
   resultTextBox,
@@ -55,7 +56,7 @@ function App() {
               <Box className={ranking}>
                 <ul className={list}>
                   {top5Categories.map((category, index) => (
-                    <li key={index + 1}>
+                    <li className={li} key={index + 1}>
                       {index + 1}. {category[0]}
                     </li>
                   ))}
@@ -74,7 +75,7 @@ function App() {
               <Box className={ranking}>
                 <ul className={list}>
                   {top5Places.map((place, index) => (
-                    <li key={index}>
+                    <li className={li} key={index}>
                       {index + 1}. {place[0]}
                     </li>
                   ))}
